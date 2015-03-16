@@ -1,0 +1,162 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+            
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                <meta name="robots" content="NONE,NOARCHIVE" />
+            
+
+            <title>Django REST framework</title>
+
+            
+                
+                    <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap.min.css"/>
+                    <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap-tweaks.css"/>
+                
+                <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.css"/>
+                <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.css"/>
+            
+
+        
+    </head>
+
+    
+    <body class=" container">
+
+        <div class="wrapper">
+
+            
+                <div class="navbar navbar-inverse">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <span>
+                                
+                                    <a class='brand' rel="nofollow" href='http://www.django-rest-framework.org'>
+                                        Django REST framework <span class="version">2.4.4</span>
+                                    </a>
+                                
+                            </span>
+                            <ul class="nav pull-right">
+                                
+                                    
+                                        <li><a href='/api-auth/login/?next=/users/'>Log in</a></li>
+                                    
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+
+            
+                <ul class="breadcrumb">
+                    
+                        <li>
+                            <a href="/users/" class="active">
+                                User
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+            
+
+            <!-- Content -->
+            <div id="content">
+
+                
+                    <form id="get-form" class="pull-right">
+                        <fieldset>
+                            <div class="btn-group format-selection">
+                                <a class="btn btn-primary js-tooltip" href='/users/?user=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;csrfmiddlewaretoken=B02r1WL0ggCMv849T0SjS9pPgxzXJfIM'
+                                     rel="nofollow" title="Make a GET request on the User resource">GET</a>
+
+                                <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown"
+                                        title="Specify a format for the GET request">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    
+                                        <li>
+                                            <a class="js-tooltip format-option"
+                                                href='/users/?data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;user=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;csrfmiddlewaretoken=B02r1WL0ggCMv849T0SjS9pPgxzXJfIM&amp;format=json'
+                                                 rel="nofollow"
+                                               title="Make a GET request on the User resource with the format set to `json`">
+                                                json
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a class="js-tooltip format-option"
+                                                href='/users/?data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;user=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;csrfmiddlewaretoken=B02r1WL0ggCMv849T0SjS9pPgxzXJfIM&amp;format=api'
+                                                 rel="nofollow"
+                                               title="Make a GET request on the User resource with the format set to `api`">
+                                                api
+                                            </a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </form>
+                
+
+                
+                    <form class="button-form" action="/users/?user=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;csrfmiddlewaretoken=B02r1WL0ggCMv849T0SjS9pPgxzXJfIM" method="POST">
+                        <input type='hidden' name='csrfmiddlewaretoken' value='B02r1WL0ggCMv849T0SjS9pPgxzXJfIM' />
+                        <input type="hidden" name="_method" value="OPTIONS" />
+                        <button class="btn btn-primary js-tooltip"
+                                title="Make an OPTIONS request on the User resource">OPTIONS</button>
+                    </form>
+                
+
+                
+
+                <div class="content-main">
+                    <div class="page-header">
+                        <h1>User</h1>
+                    </div>
+                    
+                        
+                    
+                    <div class="request-info" style="clear: both" >
+                        <pre class="prettyprint"><b>POST</b> /users/?user=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;data=%7B%22first_name%22%3A%22angular%22%2C%22last_name%22%3A%22angualr%22%2C%22email%22%3A%22ang%40angular.com%22%2C%22password%22%3A%22123%22%2C%22gender%22%3A%22M%22%7D&amp;csrfmiddlewaretoken=B02r1WL0ggCMv849T0SjS9pPgxzXJfIM</pre>
+                    </div>
+                    <div class="response-info">
+                        <pre class="prettyprint"><span class="meta nocode"><b>HTTP 403 FORBIDDEN</b>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+<b>Allow:</b> <span class="lit">GET, POST, HEAD, OPTIONS</span>
+
+</span>{
+    &quot;detail&quot;: &quot;CSRF Failed: CSRF token missing or incorrect.&quot;
+}</pre>
+                    </div>
+                </div>
+
+                
+            </div>
+            <!-- END Content -->
+
+            <footer>
+                
+                    <p>Sponsored by <a href="http://dabapps.com/">DabApps</a>.</p>
+                
+            </footer>
+
+        </div><!-- ./wrapper -->
+
+        
+            <script src="/static/rest_framework/js/jquery-1.8.1-min.js"></script>
+            <script src="/static/rest_framework/js/bootstrap.min.js"></script>
+            <script src="/static/rest_framework/js/prettify-min.js"></script>
+            <script src="/static/rest_framework/js/default.js"></script>
+        
+    </body>
+    
+</html>

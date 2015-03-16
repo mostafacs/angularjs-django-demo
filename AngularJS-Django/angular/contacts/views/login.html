@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Register</title>
+<script src="../../libs/angular/angular.js"></script>
+<script src="../../libs/angular-resource/angular-resource.min.js"></script>
+<script src="../../libs/angular-cookies/angular-cookies.min.js"></script>
+<script src="../../libs/angular-route/angular-route.js"></script>
+<script src="../ContactModule.js" ></script>
+<script src="../services/RegisterService.js" ></script>
+<script src="../controllers/RegisterController.js" ></script>
+
+</head>
+<body ng-app = "contacts">
+
+<h1> Please Login :</h1>
+
+<div>
+
+<table ng-controller="auth">
+	
+	<tr>
+		<td> Email : </td>
+		<td> <input type="text" name="email" ng-model="email" />
+	</tr>
+    <tr>
+		<td> Password : </td>
+		<td> <input type="text" name="password" ng-model="password" />
+	</tr>
+	
+	<tr>
+		<td></td>
+		<td><button ng-click="login()">Login</button></td>
+	</tr>
+
+	<tr>
+		<td></td>
+		<td><button ng-click="check()">Check</button></td>
+	</tr>
+
+
+</table>
+
+</div>
+
+
+
+</body>
+</html>
